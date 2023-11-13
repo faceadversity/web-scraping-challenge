@@ -1,6 +1,6 @@
 # web-scraping-challenge
 # Background 
-You’re now ready to take on a full web-scraping and data analysis project. You’ve learned to identify HTML elements on a page, identify their id and class attributes, and use this knowledge to extract information via both automated browsing with Splinter and HTML parsing with Beautiful Soup. You’ve also learned to scrape various types of information. These include HTML tables and recurring elements, like multiple news articles on a webpage.
+You’re now ready to take on a full web-scraping and data analysis project. You’ve learned to identify HTML elements on a page, identify their `id` and `class` attributes, and use this knowledge to extract information via both automated browsing with Splinter and HTML parsing with Beautiful Soup. You’ve also learned to scrape various types of information. These include HTML tables and recurring elements, like multiple news articles on a webpage.
 
 As you work on this Challenge, remember that you’re strengthening the same core skills that you’ve been developing until now: collecting data, organizing and storing data, analyzing data, and then visually communicating your insights.
 # What You're Creating
@@ -13,27 +13,27 @@ This assignment consists of two technical products. You will submit the followin
              [https://static.bc-edx.com/data/web/mars_facts/temperature.html]
 # Instructions
 ## Part 1: Scrape Titles and Preview Text from Mars News
-Open the Jupyter Notebook in the starter code folder named part_1_mars_news.ipynb. You will work in this code as you follow the steps below to scrape the Mars News website.
+Open the Jupyter Notebook in the starter code folder named `part_1_mars_news.ipynb`. You will work in this code as you follow the steps below to scrape the Mars News website.
   1. Use automated browsing to visit the Mars news site (linked above) and inspect the page to identify which elements to scrape.
   2. Create a Beautiful Soup object and use it to extract text elements from the website.
   3. Extract the titles and preview text of the news articles that you scraped. Store the scraping results in Python data structures as follows:
-     - Store each title-and-preview pair in a Python dictionary and, give each dictionary two keys: title and preview.
+     - Store each title-and-preview pair in a Python dictionary and, give each dictionary two keys: `title` and `preview`.
      - Store all the dictionaries in a Python list.
      - Print the list in your notebook.
   4. Optionally, store the scraped data in a file (already included in the github).
 ## Part 2: Scrape and Analyze Mars Weather Data
-Open the Jupyter Notebook in the starter code folder named part_2_mars_weather.ipynb. You will work in this code as you follow the steps below to scrape and analyze Mars weather data.
+Open the Jupyter Notebook in the starter code folder named `part_2_mars_weather.ipynb`. You will work in this code as you follow the steps below to scrape and analyze Mars weather data.
   1. Use automated browsing to visit the Mars Temperature Data Site (linked above) and inspect the page to identify which elements to scrape.
   2. Create a Beautiful Soup object and use it to scrape the data in the HTML table.
   3. Assemble the scraped data into a Pandas DataFrame. The columns should have the same headings as the table on the website:
-     - id: the identification number of a single transmission from the Curiosity rover
-     - terrestrial_date: the date on Earth
-     - sol: the number of elapsed sols (Martian days) since Curiosity landed on Mars
-     - ls: the solar longitude
-     - month: the Martian month
-     - min_temp: the minimum temperature, in Celsius, of a single Martian day (sol)
-     - pressure: The atmospheric pressure at Curiosity's location
-  4. Examine the data types that are currently associated with each column. If necessary, cast (or convert) the data to the appropriate datetime, int, or float data types.
+     - `id`: the identification number of a single transmission from the Curiosity rover
+     - `terrestrial_date`: the date on Earth
+     - `sol`: the number of elapsed sols (Martian days) since Curiosity landed on Mars
+     - `ls`: the solar longitude
+     - `month`: the Martian month
+     - `min_temp`: the minimum temperature, in Celsius, of a single Martian day (sol)
+     - `pressure`: The atmospheric pressure at Curiosity's location
+  4. Examine the data types that are currently associated with each column. If necessary, cast (or convert) the data to the appropriate `datetime`, `int`, or `float` data types.
   5. Analyze your dataset by using Pandas functions to answer the following questions:
      - How many months exist on Mars?
      - How many Martian (and not Earth) days worth of data exist in the scraped dataset?
